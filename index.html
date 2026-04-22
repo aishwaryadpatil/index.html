@@ -378,9 +378,9 @@ footer span{color:var(--teal)}
   <p>Aishwarya Patil &middot; Data Analytics Portfolio &middot; Built with <span>&#9829;</span> and lots of Tableau</p>
 </footer>
 
-<script>
+/*<script>
 var editing=false;
-function toggleEdit(){
+//function toggleEdit(){
   editing=!editing;
   document.body.classList.toggle("editing",editing);
   document.querySelector(".eb-edit").textContent=editing?"Stop Editing":"Edit";
@@ -393,12 +393,12 @@ function saveAll(){
   document.querySelectorAll("[contenteditable]").forEach(function(el,i){data[i]=el.innerHTML;});
   localStorage.setItem("ap_p2",JSON.stringify(data));
   var t=document.createElement("div");
-  t.textContent="Saved!";
+ // t.textContent="Saved!";
   t.style.cssText="position:fixed;bottom:70px;left:50%;transform:translateX(-50%);background:#0EA5A0;color:#fff;padding:10px 24px;border-radius:50px;font-size:14px;z-index:9999;font-family:sans-serif;box-shadow:0 4px 16px rgba(0,0,0,.2)";
   document.body.appendChild(t);
   setTimeout(function(){t.remove();},2000);
 }
-function loadSaved(){
+//function loadSaved(){
   var s=localStorage.getItem("ap_p2");
   if(!s)return;
   var data=JSON.parse(s);
@@ -409,6 +409,6 @@ var obs=new IntersectionObserver(function(entries){
 },{threshold:0.08});
 document.querySelectorAll(".reveal").forEach(function(el){obs.observe(el);});
 loadSaved();
-</script>
+</script>*/
 </body>
 </html>
